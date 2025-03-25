@@ -6,7 +6,7 @@ This streamlined approach reflects the nature of the Isolation Forest algorithm,
 
 Additionally, DPG-iForest introduces the Inlier-Outlier Propagation Score, a metric that enhances understanding of how the model determines whether data points are "inliers" or "outliers." By focusing on feature-operator relationships, this metric offers a clearer, more transparent view of the model's internal mechanisms and enables more accurate comparisons between different features.
 <p align="center">
-  <img src="https://github.com/LeonardoArrighi/DPG/blob/main/examples/custom_l2.jpg?raw=true" width="600" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/sintetic_4_200_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_Inlier-OutlierPropagationScore.png" width="600" />
 </p>
 
 ## The structure
@@ -15,7 +15,7 @@ The concept behind DPG is to convert a generic tree-based ensemble model for cla
 - Edges denote the frequency with which these predicates are satisfied during the model training phase by the samples of the dataset.
 
 <p align="center">
-  <img src="https://github.com/LeonardoArrighi/DPG/blob/main/examples/example.png?raw=true" width="600" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/example.png?raw=true" width="600" />
 </p>
 
 ## Metrics
@@ -63,16 +63,16 @@ Some examples can be appreciated in the `examples` folder: https://github.com/Le
 In particular, the following DPG is obtained by transforming a Random Forest with 5 base learners, trained on Iris dataset.
 The used command is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples`.
 <p align="center">
-  <img src="https://github.com/LeonardoArrighi/DPG/blob/main/examples/iris_bl5_perc0.001_dec2.png" width="800" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2.png" width="800" />
 </p>
 
 The following visualizations are obtained using the same parameters as the previous example, but they show two different metrics: _Community_ and _Betweenness centrality_.
 The used command for showing communities is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples --communities`.
 <p align="center">
-  <img src="https://github.com/LeonardoArrighi/DPG/blob/main/examples/iris_bl5_perc0.001_dec2_communities.png" width="800" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2_communities.png" width="800" />
 </p>
 
 The used command for showing a specific property is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples --attribute "Betweenness centrality" --class_flag`.
 <p align="center">
-  <img src="https://github.com/LeonardoArrighi/DPG/blob/main/examples/iris_bl5_perc0.001_dec2_Betweennesscentrality.png" width="800" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2_Betweennesscentrality.png" width="800" />
 </p>
