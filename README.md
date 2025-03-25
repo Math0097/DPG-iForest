@@ -19,12 +19,12 @@ The concept behind DPG is to convert a generic tree-based ensemble model for cla
 </p>
 
 ## Metrics
-The graph-based nature of DPG provides significant enhancements in the direction of a complete mapping of the ensemble structure.
+The graph-based nature of DPG-iForest provides significant enhancements in the direction of a complete mapping of the ensemble structure.
 | Property     | Definition | Utility |
 |--------------|------------|---------|
 | _Inlier-Outlier Propagation Score_  | It evaluates the tendency of each node in the graph (representing a feature and its operator) to drive the decision-making process toward classifying data points as either `Outliers` or `Inliers`. |
 
-## The DPG library
+## The -iForest library
 
 #### Main script
 - `dpg_custom.py`: with this script it is possible to apply DPG-iForest to your dataset.
@@ -36,7 +36,7 @@ The library also contains two other essential scripts:
 
 #### Output
 The DPG-iForest application, through `dpg_custom.py`, produces several files:
-- the visualization of DPG in a dedicated environment, which can be zoomed and saved;
+- the visualization of DPG-iForest in a dedicated environment, which can be zoomed and saved;
 - a `.txt` file containing the DPG-iForest logs;
 - a `.csv` file containing the information about all the nodes of the DPG-iForest and their associated Inlier-Outlier Propagation Score metric;
 
@@ -60,7 +60,7 @@ Disclaimer: `attribute` and `communities` can not be added together, since DPG s
 #### Example `dpg_custom.py`
 Some examples can be appreciated in the `examples` folder: https://github.com/Math0097/DPG-iForest/blob/main/examples
 
-In particular, the following DPG is obtained by transforming a Isolation Forest with 200 base learners, trained on Annthyroid dataset.
+In particular, the following DPG-iForest is obtained by transforming a Isolation Forest with 200 base learners, trained on Annthyroid dataset.
 The used command is `python dpg_custom.py`.
 <p align="center">
   <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/Annthyroid_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_Inlier-OutlierPropagationScore.png" width="800" />
