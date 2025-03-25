@@ -24,7 +24,7 @@ The graph-based nature of DPG-iForest provides significant enhancements in the d
 |--------------|------------|---------|
 | _Inlier-Outlier Propagation Score_  | It evaluates the tendency of each node in the graph (representing a feature and its operator) to drive the decision-making process toward classifying data points as either `Outliers` or `Inliers`. |
 
-## The -iForest library
+## The DPG-iForest library
 
 #### Main script
 - `dpg_custom.py`: with this script it is possible to apply DPG-iForest to your dataset.
