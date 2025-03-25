@@ -37,25 +37,22 @@ The library also contains two other essential scripts:
 #### Output
 The DPG-iForest application, through `dpg_custom.py`, produces several files:
 - the visualization of DPG-iForest in a dedicated environment, which can be zoomed and saved;
-- a `.txt` file containing the DPG-iForest logs;
+- a `.txt` file containing iForest generated paths and data points classified as outliers;
 - a `.csv` file containing the information about all the nodes of the DPG-iForest and their associated Inlier-Outlier Propagation Score metric;
 
 ## Easy usage
-Usage: `python dpg_standard.py --ds <dataset_name> --l <integer_number> --pv <threshold_value> --t <integer_number> --model_name <str_model_name> --dir <save_dir_path> --plot --save_plot_dir <save_plot_dir_path> --attribute <attribute> --communities --class_flag`
+Usage: `python dpg_custom.py --ds "../Datasets/sintetic_4_200_preprocessed.csv" --l 200  --t 2 --cont 0.02 --seed 42 --dir "./iForest_results_clf/" --plot --save_plot_dir "./iForest_results_clf/" --attribute "Inlier-Outlier Propagation Score" --class_flag --edge_attribute "Weighted frequency" --predicates "feature_operator" --mode "global" --mode_graph "all" --mode_score "freq_pes"`
 Where:
 - `ds` is the name of the standard classification `sklearn` dataset to be analyzed;
 - `l` is the number of base learners for the Random Forest;
-- `pv` is the threshold value indicating the desire to retain only those paths that occur with a frequency exceeding a specified proportion across the trees;
 - `t` is the decimal precision of each feature;
-- `model_name` is the name of the `sklearn` model chosen to perform classification (`RandomForestClassifier`,`BaggingClassifier`,`ExtraTreesClassifier`,`AdaBoostClassifier` are currently available);
+- `seed` is the random seed;
 - `dir` is the path of the directory to save the files;
-- `plot` is a store_true variable which can be added to plot the DPG;
+- `plot` is a store_true variable which can be added to plot the DPG-iForest;
 - `save_plot_dir` is the path of the directory to save the plot image;
-- `attribute` is the specific node metric which can be visualized on the DPG;
-- `communities` is a store_true variable which can be added to visualize communities on the DPG;
+- `attribute` is the specific node metric which can be visualized on the DPG-iForest;
 - `class_flag` is a store_true variable which can be added to highlight class nodes.
-  
-Disclaimer: `attribute` and `communities` can not be added together, since DPG supports just one of the two visualizations.
+- `edge_attribute` is the specific edge metric which can be visualized on the DPG-iForest;
 
 #### Example `dpg_custom.py`
 Some examples can be appreciated in the `examples` folder: https://github.com/Math0097/DPG-iForest/blob/main/examples
