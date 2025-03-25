@@ -5,7 +5,9 @@ DPG-iForest is an extension of DPG, a model-agnostic tool aimed at improving the
 This streamlined approach reflects the nature of the Isolation Forest algorithm, emphasizing the relationship between features and their role in decisions, without the need for a value element. DPG-iForest utilizes a graph structure to capture and visualize the model's logic, enabling users to see how features interact with operators and influence predictions. This method sheds light on key decision points and provides deeper insights into the overall decision-making process.
 
 Additionally, DPG-iForest introduces the Inlier-Outlier Propagation Score, a metric that enhances understanding of how the model determines whether data points are "inliers" or "outliers." By focusing on feature-operator relationships, this metric offers a clearer, more transparent view of the model's internal mechanisms and enables more accurate comparisons between different features.
-<embed src="https://github.com/Math0097/DPG-iForest/blob/main/examples/sintetic_4_200_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_render.pdf" type="application/pdf" width="600" height="500">
+<iframe src="https://github.com/Math0097/DPG-iForest/raw/main/examples/sintetic_4_200_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_render.pdf" width="600" height="500">
+    Il tuo browser non supporta gli iframe.
+</iframe>
 
 ## The structure
 The concept behind DPG is to convert a generic tree-based ensemble model for classification into a graph, where:
