@@ -41,11 +41,12 @@ The DPG-iForest application, through `dpg_custom.py`, produces several files:
 - a `.csv` file containing the information about all the nodes of the DPG-iForest and their associated Inlier-Outlier Propagation Score metric;
 
 ## Easy usage
-Usage: `python dpg_custom.py --ds "../Datasets/sintetic_4_200_preprocessed.csv" --l 200  --t 2 --cont 0.02 --seed 42 --dir "./iForest_results_clf/" --plot --save_plot_dir "./iForest_results_clf/" --attribute "Inlier-Outlier Propagation Score" --class_flag --edge_attribute "Weighted frequency" --predicates "feature_operator" --mode "global" --mode_graph "all" --mode_score "freq_pes"`
+Usage: `python dpg_custom.py --ds "./datasets/sintetic_4_200_preprocessed.csv" --l 200  --t 2 --cont 0.02 --seed 42 --dir "./iForest_results_clf/" --plot --save_plot_dir "./iForest_results_clf/" --attribute "Inlier-Outlier Propagation Score" --class_flag --edge_attribute "Weighted frequency" --predicates "feature_operator" --mode "global" --mode_graph "all" --mode_score "freq_pes"`
 Where:
 - `ds` is the name of the standard classification `sklearn` dataset to be analyzed;
 - `l` is the number of base learners for the Random Forest;
 - `t` is the decimal precision of each feature;
+- `cont` is the contamination parameter of the iForest model;
 - `seed` is the random seed;
 - `dir` is the path of the directory to save the files;
 - `plot` is a store_true variable which can be added to plot the DPG-iForest;
@@ -58,7 +59,7 @@ Where:
 Some examples can be appreciated in the `examples` folder: https://github.com/Math0097/DPG-iForest/blob/main/examples
 
 In particular, the following DPG-iForest is obtained by transforming a Isolation Forest with 200 base learners, trained on Annthyroid dataset.
-The used command is `python dpg_custom.py`.
+The used command is `python dpg_custom.py --ds "./datasets/Annthyroid_preprocessed.csv" --l 200  --t 2 --cont 0.0361 --seed 42 --dir "./iForest_results_clf/" --plot --save_plot_dir "./iForest_results_clf/" --attribute "Inlier-Outlier Propagation Score" --class_flag --edge_attribute "Weighted frequency" --predicates "feature_operator" --mode "global" --mode_graph "all" --mode_score "freq_pes"`.
 <p align="center">
   <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/Annthyroid_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_Inlier-OutlierPropagationScore.png" width="800" />
 </p>
