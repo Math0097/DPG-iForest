@@ -58,21 +58,10 @@ Where:
 Disclaimer: `attribute` and `communities` can not be added together, since DPG supports just one of the two visualizations.
 
 #### Example `dpg_custom.py`
-Some examples can be appreciated in the `examples` folder: https://github.com/LeonardoArrighi/DPG/tree/main/examples
+Some examples can be appreciated in the `examples` folder: https://github.com/Math0097/DPG-iForest/blob/main/examples
 
-In particular, the following DPG is obtained by transforming a Random Forest with 5 base learners, trained on Iris dataset.
-The used command is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples`.
+In particular, the following DPG is obtained by transforming a Isolation Forest with 200 base learners, trained on Annthyroid dataset.
+The used command is `python dpg_custom.py`.
 <p align="center">
-  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2.png" width="800" />
-</p>
-
-The following visualizations are obtained using the same parameters as the previous example, but they show two different metrics: _Community_ and _Betweenness centrality_.
-The used command for showing communities is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples --communities`.
-<p align="center">
-  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2_communities.png" width="800" />
-</p>
-
-The used command for showing a specific property is `python dpg_standard.py --ds iris --l 5 --pv 0.001 --t 2 --dir examples --plot --save_plot_dir examples --attribute "Betweenness centrality" --class_flag`.
-<p align="center">
-  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/iris_bl5_perc0.001_dec2_Betweennesscentrality.png" width="800" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/Annthyroid_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_Inlier-OutlierPropagationScore.png" width="800" />
 </p>
