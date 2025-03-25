@@ -6,7 +6,7 @@ This streamlined approach reflects the nature of the Isolation Forest algorithm,
 
 Additionally, DPG-iForest introduces the Inlier-Outlier Propagation Score, a metric that enhances understanding of how the model determines whether data points are "inliers" or "outliers." By focusing on feature-operator relationships, this metric offers a clearer, more transparent view of the model's internal mechanisms and enables more accurate comparisons between different features.
 <p align="center">
-  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/sintetic_4_200_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_temp.png" width="600" />
+  <img src="https://github.com/Math0097/DPG-iForest/blob/main/examples/sintetic_4_200_preprocessed_iForest_bl200_dec2_feature_operator_all_freq_pes_temp.png" width="1000" />
 </p>
 
 ## The structure
